@@ -1,0 +1,151 @@
+#root {
+    font: 14px "Century Gothic", Futura, sans-serif;
+  }
+
+@media all  {
+    
+}
+
+.app-container{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color:#DDE79C;
+    height: 100%;
+    width: 100%;
+}
+
+.boards-display{
+    flex:1;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: center;
+    width: 80%;
+    height:80%;
+}
+
+.UI-display{
+    flex:1;
+    text-align: center;
+}
+
+.UI-container{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-flow: column wrap;
+}
+
+.input-container{
+    display: flex;
+    flex-flow:column nowrap;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    padding: 3%;
+    background-color:#84D7D7;
+    border-radius: 20px;
+}
+
+.UI-header{
+    flex:1;
+    padding:20px; 
+    width:100%;
+    height:100%;
+    text-align: center;
+    background-image: radial-gradient(circle at 50%,#84D7D7,transparent);
+}
+
+.UI-projectdesc{
+    flex:1;
+}
+
+.UI-container-field{
+    flex: 1;
+}
+
+.UI-container-button{
+    flex:1;
+}
+
+.boards-container{
+    flex:1;
+    height: 100%;
+    min-height:500px;
+    background-color:#84D7D7;
+    border-radius: 60px;
+    margin:10px;
+    padding:10px;
+    animation: tide 4s infinite;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+
+}
+
+@keyframes tide {
+    from {outline: #BAC284 2px solid ;}
+    to {outline:#BBE3BD 15px solid ;}
+    to {outline: transparent 50px solid ;}
+}
+
+
+
+
+.board-table-container{
+    border-radius: 20px;
+    padding:20px;
+    margin-bottom: 20px;
+    animation: gradient_breathe 20s alternate infinite;
+    border-collapse: collapse;
+}
+
+@media all and (max-width:600px) {
+    .app-container{
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+        background-color:#DDE79C;
+        height: 100%;
+        width: 100%;
+    }  
+}
+
+@keyframes gradient_breathe {
+    from {background-color:#99DEDE;}
+    to {background-color:#84D7D7;}
+}
+
+.board-table{
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+
+
+.board-table-container-caption{
+    font-style: italic;
+}
+
+.board-table-cell{
+    flex: 1 auto;
+    line-height: 32px;
+    text-align: center;
+    text-emphasis: bold;
+    border: 1px solid #999;
+    width: 60px;
+    height:60px;
+    background-color: white;
+}
+
+.board-table-header{
+    flex:1;
+}
+
